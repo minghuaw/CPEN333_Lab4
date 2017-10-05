@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{8A48EFB9-7FDB-4173-8478-35314B3B4926}</ProjectGuid>
-    <RootNamespace>CPEN333_Lab4</RootNamespace>
+    <ProjectGuid>{0D9011CD-57D0-428B-96F7-46522469C6B8}</ProjectGuid>
+    <RootNamespace>maze_runner</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -113,6 +113,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="maze_runner.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="maze_runner_common.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

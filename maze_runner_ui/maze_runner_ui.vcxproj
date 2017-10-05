@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{8A48EFB9-7FDB-4173-8478-35314B3B4926}</ProjectGuid>
-    <RootNamespace>CPEN333_Lab4</RootNamespace>
+    <ProjectGuid>{7A2F42BE-164F-4E2A-84DD-A4A12D6B7B01}</ProjectGuid>
+    <RootNamespace>maze_runner_ui</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -70,7 +70,7 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>D:\Workspaces\Workspace_Cpp\CPEN333_Library\include;$(IncludePath)</IncludePath>
+    <IncludePath>D:\Workspaces\Workspace_Cpp\CPEN333_Library\include;D:\Workspaces\Workspace_Cpp\CPEN333_Lab4\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -113,6 +113,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="maze_runner_ui.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="maze_runner_common.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
