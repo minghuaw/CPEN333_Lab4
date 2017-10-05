@@ -75,15 +75,15 @@ public:
 			if (wall_count >= 3)
 				minfo_.maze[c][r] = PASSED_CHAR;
 
-			// try right
-			if (c + 1 < minfo_.cols && (minfo_.maze[c + 1][r] != WALL_CHAR && minfo_.maze[c + 1][r] != PASSED_CHAR)) {
-				c++;
+			// try up
+			if (r - 1 >= 0 && (minfo_.maze[c][r - 1] != WALL_CHAR && minfo_.maze[c][r - 1] != PASSED_CHAR)) {
+				r--;
 				if (_go_helper(c, r))
 					return 1;
 			}
-			// try down
-			else if (r + 1 < minfo_.rows && (minfo_.maze[c][r + 1] != WALL_CHAR && minfo_.maze[c][r + 1] != PASSED_CHAR)) {
-				r++;
+			// try right
+			else if (c + 1 < minfo_.cols && (minfo_.maze[c + 1][r] != WALL_CHAR && minfo_.maze[c + 1][r] != PASSED_CHAR)) {
+				c++;
 				if (_go_helper(c, r))
 					return 1;
 			}
@@ -93,9 +93,9 @@ public:
 				if (_go_helper(c, r))
 					return 1;
 			}
-			// try up
-			else if (r - 1 >= 0 && (minfo_.maze[c][r - 1] != WALL_CHAR && minfo_.maze[c][r - 1] != PASSED_CHAR)) {
-				r--;
+			// try down
+			else if (r + 1 < minfo_.rows && (minfo_.maze[c][r + 1] != WALL_CHAR && minfo_.maze[c][r + 1] != PASSED_CHAR)) {
+				r++;
 				if (_go_helper(c, r))
 					return 1;
 			}
